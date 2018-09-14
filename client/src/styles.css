@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+
+.bordered{
+    border: 1px solid;
+    margin:2em;
+    padding:2em;
+}
