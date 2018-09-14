@@ -1,1 +1,1 @@
-# mean-stack-authentication
+# mean-stack-expense-tracker
