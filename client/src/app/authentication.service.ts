@@ -81,11 +81,11 @@ export class AuthenticationService {
     let base;
 
     if (method === 'post') {
-      base = this.http.post(`https://track-my-expenses-chilivote.c9users.io:8081/api/${type}`, user)
+      base = this.http.post(`https://glacial-sea-72131.herokuapp.com/api/${type}`, user)
       .pipe(
       catchError(this.handleError('register', [])));
     } else {
-      base = this.http.get(`https://track-my-expenses-chilivote.c9users.io:8081/api/${type}`, { headers: { Authorization: `Bearer ${this.getToken()}` }});
+      base = this.http.get(`https://glacial-sea-72131.herokuapp.com/api/${type}`, { headers: { Authorization: `Bearer ${this.getToken()}` }});
     }
 
     const request = base.pipe(
