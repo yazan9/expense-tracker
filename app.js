@@ -44,6 +44,6 @@ app.get('/', (req,res) => {
 })
 
 //Listen to port 8081
-app.listen(port, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log(`Starting the server at port ${port}`);
 });
