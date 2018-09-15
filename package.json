@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app",
-    "postinstall": "cd client && npm install && && npm install -g @angular/cli && ng build --prod"
+    "postinstall": "cd client && npm install && npm install -g @angular/cli && ng build --prod"
   },
   "dependencies": {
     "body-parser": "~1.17.2",
