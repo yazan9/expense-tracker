@@ -12,8 +12,8 @@ import {Router} from "@angular/router";
 })
 export class ExpenseService {
   
-  private expensesUrl = 'https://track-my-expenses-chilivote.c9users.io:8081/api/expenses';  //to be changed to a global variable
-  private expenseUrl = 'https://track-my-expenses-chilivote.c9users.io:8081/api/expense';  //to be changed to a global variable
+  private expensesUrl = 'https://glacial-sea-72131.herokuapp.com/api/expenses';  //to be changed to a global variable
+  private expenseUrl = 'https://glacial-sea-72131.herokuapp.com/api/expense';  //to be changed to a global variable
 
   constructor(private http: HttpClient, private authService : AuthenticationService, private router: Router) { }
   
@@ -45,18 +45,12 @@ export class ExpenseService {
   
   private handleError(error: HttpErrorResponse) {
   if (error.error instanceof ErrorEvent) {
-    // A client-side or network error occurred. Handle it accordingly.
-    //console.error('An error occurred:', error.error.message);
+    
   } else {
-    // The backend returned an unsuccessful response code.
-    // The response body may contain clues as to what went wrong,
-    //console.error(
-    //  `Backend returned code ${error.status}, ` +
-    //  `body was: ${error.error}`);
+    
   }
   // return an observable with a user-facing error message
   
-  //console.log("I am being handled");
   return throwError(
     'Something bad happened; please try again later.');
   };
