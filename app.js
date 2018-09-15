@@ -32,6 +32,10 @@ app.use(cors());
 */
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Create link to Angular build directory
+var distDir = __dirname + "/client/dist/client";
+app.use(express.static(distDir));
+
 app.use(function (err, req, res, next) {
   if (err.name === 'UnauthorizedError') {
     res.status(401);
